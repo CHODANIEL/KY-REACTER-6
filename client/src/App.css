@@ -1,0 +1,83 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+/* 화면 전체 컨테이너(배경 그라데이션 적용 대상) */
+section {
+  min-height: 100vh;
+  width: 100%;
+  transition: background 240ms ease;
+
+  /* 화면 중앙 정렬 */
+  display: flex;
+  justify-content: center; /* 가로 중앙 */
+  align-items: center;     /* 세로 중앙 */
+}
+
+/* 기본 배경은 연한 회색, 패딩은 0 (가장자리 여백 방지) */
+body {
+  background-color: #f7f7f7;
+  padding: 0;
+}
+
+h1 {
+  color: #111;
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.app {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(207, 198, 198, 0.118);
+  border-radius: 20px;
+}
+
+.input-wrap {
+  display: flex;
+  gap: 10px;
+}
+
+.input-wrap input {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  border-radius: 5px;
+}
+
+.input-wrap button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px 14px;
+  background-color: #111;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-wrap button[disabled] {
+  opacity: .6;
+  cursor: not-allowed;
+}
+
+.loading {
+  margin-top: 8px;
+  font-size: 14px;
+  opacity: 0.9;
+  color: #111;
+  font-weight: bold;
+}
+
+/* 에러 메시지 스타일 (App.jsx에서 사용 중) */
+.error {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #b00020;
+  font-weight: bold;
+}
